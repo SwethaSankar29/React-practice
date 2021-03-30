@@ -1,0 +1,17 @@
+Pure component:
+<Counter>
+<Counterform/>
+</Counter>
+
+function based vs class based?
+
+react.purecomponent
+
+functional component:
+  useState hook-->
+  useEffect hook-->
+  useMemo-->
+  useRef-->
+  useReducer-->
+  useContext-->
+  
