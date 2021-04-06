@@ -1,18 +1,11 @@
-import React, { Component, memo } from "react";
+import React from "react";
 
-class MemoExample extends Component {
-  render() {
-    const { userName } = this.props;
-    const changeUserName = () => {
-      alert("props changed");
-    };
-
-    return (
-      <div>
-        <h1>Hi {userName}</h1>
-        {changeUserName()}
-      </div>
-    );
-  }
-}
-export default memo(MemoExample);
+const MemoExample = ({ userName }) => {
+  return (
+    <div>
+      <h1>Hi {userName}</h1>
+      {alert("props changed")}
+    </div>
+  );
+};
+export default React.memo(MemoExample);
