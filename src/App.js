@@ -12,8 +12,9 @@ import WithoutUsingLayout from "./withoutUseLayout";
 import HocExample from "./HocExample";
 import HookUseExample from "./customHook";
 import LocalStorageHook from "./LocalStorageHook";
-import PureComponentExample from "./PureComponent";
-import PureComponent1 from "./PureComponent1";
+import PureComponentExample from "./components/sampleComponent";
+import CustomHookAssignment from "./customHooks/CustomHookAssignment";
+import HocClassBased from "./components/HocClassBased";
 
 function App() {
   axios.get("products.json").then(function (res) {
@@ -34,8 +35,12 @@ function App() {
              <HookUseExample></HookUseExample>
               <LocalStorageHook></LocalStorageHook>
 */}
+      {
+        //assignments}
+      }
       <PureComponentExample />
-      {/* <PureComponent1 userName={"swetha"} /> */}
+      <CustomHookAssignment />
+      <HocClassBased />
     </div>
   );
 }
